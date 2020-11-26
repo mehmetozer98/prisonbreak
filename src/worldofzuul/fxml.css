@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.header,
+.footer {
+    -fx-background-color: #bbb;
+}
+
+.rightBar,
+.leftBar {
+    -fx-background-color: #ddd;
+}

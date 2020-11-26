@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="layers" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="worldofzuul.FXMLController">
+   <children>
+      <BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@fxml.css">
+         <center>
+            <TilePane fx:id="tilePane" alignment="CENTER" prefHeight="300.0" prefWidth="300.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="header" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="headerText" text="This is Prison Break!" />
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="rightBar" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Items:" />
+                  <ListView fx:id="itemsListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </right>
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="leftBar" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Inventory" />
+                  <ListView fx:id="inventoryListView" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="footer" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="turnsText" text="Turns: 0" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+      <StackPane fx:id="infopane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="281.0" prefWidth="500.0">
+         <children>
+            <Rectangle fill="#968c81" height="650.0" smooth="false" stroke="#574545" strokeType="INSIDE" strokeWidth="2.0" width="650.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcom to Prison Break" textAlignment="CENTER">
+               <font>
+                  <Font name="Impact" size="26.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="-350.0" />
+               </StackPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Movement:&#10;Add Item to inventory:&#10;Interact with NPC:&#10;Toggle info panel:&#10;Restart Game:">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets right="200.0" />
+               </StackPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="W, A, S, D&#10;Double click item&#10;E&#10;I&#10;N" textAlignment="RIGHT">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets right="-200.0" />
+               </StackPane.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thanks for trying our game" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+               <StackPane.margin>
+                  <Insets top="300.0" />
+               </StackPane.margin>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</StackPane>

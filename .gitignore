@@ -1,0 +1,21 @@
+# Personal NetBeans settings
+**/nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Word temporary files
+~$*.doc*
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+nbproject/private/private.properties
+/nbproject/private/
